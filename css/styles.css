@@ -1,51 +1,163 @@
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-}
-body{
-	background-position: center;
-	background-size:cover;
-	background-attachment: fixed;
-	background-image:url("../img/dzialo.jpg");
-	background-repeat:no-repeat;
-	min-height:100vh;
-}
-.wrapper{
-	font-family:Arial;
-}
-#main{
-	color:white;
-	display:flex;
-	flex-flow:column;
-	align-items:center;
-	text-align:center;
-	justify-content: center;
-}
-h1{
-	background-color:black;
-	margin:20px;
-		padding:20px 20px;
-	border:1px solid black;
-}
-#main input[type=text]{
-	width:95%;
-	margin:20px;
-}
-#main input[type=submit]{
-	
-	margin:20px;
-	padding:10px;
-}
-.flex-vert-center{
-		display:flex;
-	flex-flow:column;
-	align-items:center;
-	justify-content: center;
-}
-form{
-	width:100%;
-	padding:20px;
-	max-width:500px;
-	background-color:rgba(0,0,0,0.7);
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  font-family: 'Montserrat',sans-serif; }
+
+.navbar-wrap {
+  background-color: white;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 20px; }
+
+.navbar {
+  font-family: 'Open sans',sans-serif;
+  display: flex;
+  height: 160px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar .logo {
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-right: 150px; }
+  .navbar .element {
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    transition: margin-bottom 0.2s,color 0.2s;
+    padding: 15px;
+    position: relative; }
+    .navbar .element span {
+      white-space: nowrap;
+      font-weight: inherit;
+      font-size: inherit;
+      font-family: inherit; }
+    .navbar .element:hover {
+      cursor: pointer;
+      margin-bottom: 5px;
+      color: #c8c8c8; }
+
+.quote-bg {
+  width: 100%;
+  height: 55vh;
+  background-image: url("../img/bg1.png");
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .quote-bg .quote {
+    max-width: 700px;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin: auto;
+    font-family: 'Montserrat',sans-serif; }
+
+.desc-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto; }
+  .desc-block .element {
+    flex-basis: 0;
+    flex-grow: 1; }
+
+.white {
+  background-color: white; }
+
+.gray {
+  background-color: #403E3E; }
+
+.white-color {
+  color: white; }
+
+.desc-wrapper {
+  margin: auto;
+  min-height: 30vh;
+  padding: 40px; }
+
+.firm {
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 160%; }
+
+.links {
+  text-align: center;
+  padding: 40px; }
+  .links h2 {
+    font-size: 30px;
+    padding: 30px; }
+  .links a {
+    text-decoration-color: none;
+    color: #c8c8c8;
+    line-height: 32px;
+    font-size: 20px; }
+
+.trusted {
+  flex-flow: column;
+  text-align: center; }
+  .trusted h1 {
+    padding: 20px; }
+  .trusted .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .trusted .grid .element {
+      width: 350px;
+      height: auto;
+      padding: 20px; }
+
+.footer {
+  background-color: black;
+  min-height: 60vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 50px; }
+  .footer .nav {
+    padding: 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center; }
+    .footer .nav .element {
+      padding: 10px;
+      cursor: pointer;
+      color: #c8c8c8;
+      transition: color 0.3s; }
+      .footer .nav .element:hover {
+        color: white; }
+  .footer .line {
+    width: 1200px;
+    height: 1px;
+    background-color: #c8c8c8;
+    content: ""; }
+  .footer .bottom-footer {
+    padding: 60px;
+    max-width: 1200px;
+    width: 90%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white; }
+    .footer .bottom-footer .left {
+      text-align: left; }
+    .footer .bottom-footer .right {
+      text-align: right; }
+
+/*# sourceMappingURL=styles.css.map */
