@@ -387,4 +387,11 @@ form {
       background-color: black;
       color: white; }
 
+.quote-c {
+  font-family: 'Arial',sans-serif;
+  font-style: italic;
+  align-self: center; }
+  .quote-c .quote-author {
+    color: gray; }
+
 /*# sourceMappingURL=styles.css.map */

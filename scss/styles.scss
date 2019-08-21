@@ -480,3 +480,11 @@ form{
         }
     }
 }
+.quote-c{ 
+    font-family:'Arial',sans-serif;
+    font-style:italic; 
+    align-self:center;
+    .quote-author{
+        color:gray;
+    }
+}
