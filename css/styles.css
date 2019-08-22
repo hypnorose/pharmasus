@@ -6,42 +6,63 @@
 body {
   background-color: white;
   font-family: 'Montserrat',sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100vw; }
 
 .navbar-wrap {
   background-color: white;
   display: block;
   margin: auto;
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 10; }
+  @media screen and (max-width: 1000px) {
+    .navbar-wrap {
+      padding: 0px; } }
 
 .navbar {
   font-family: 'Open sans',sans-serif;
   display: flex;
   height: 160px;
-  width: 100%;
+  width: 100vw;
   max-width: 1200px;
   margin: auto;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1000px) {
+    .navbar {
+      flex-flow: column;
+      height: auto; } }
   .navbar .logo {
     cursor: pointer;
     flex-grow: 1;
     flex-basis: 0;
     padding-right: 150px; }
+    @media screen and (max-width: 1000px) {
+      .navbar .logo {
+        height: auto;
+        padding: 15px;
+        max-width: 60vw; } }
   .navbar .element {
+    position: relative;
     text-decoration: none;
     color: black;
     flex-grow: 1;
     text-align: center;
     display: block;
     font-family: 'Barlow', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     transition: margin-bottom 0.2s,color 0.2s;
-    padding: 15px;
+    padding: 10px;
     position: relative; }
+    @media screen and (max-width: 1000px) {
+      .navbar .element {
+        flex-flow: column;
+        height: auto;
+        margin: 0px;
+        padding: 15px;
+        width: 100%; } }
     .navbar .element span {
       white-space: nowrap;
       font-weight: inherit;
@@ -51,6 +72,11 @@ body {
       cursor: pointer;
       margin-bottom: 5px;
       color: #c8c8c8; }
+      @media screen and (max-width: 1000px) {
+        .navbar .element:hover {
+          flex-flow: column;
+          height: auto;
+          margin-bottom: 0px; } }
 
 .quote-bg {
   width: 100%;
@@ -61,12 +87,16 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
   .quote-bg .quote {
+    width: 90%;
     max-width: 700px;
     text-align: center;
     font-size: 45px;
     color: white;
     margin: auto;
     font-family: 'Montserrat',sans-serif; }
+    @media screen and (max-width: 1000px) {
+      .quote-bg .quote {
+        font-size: 20px; } }
 
 .bg1 {
   background: url("../img/bg1.png") no-repeat top, black;
@@ -104,12 +134,31 @@ body {
   margin: auto;
   min-height: 30vh;
   padding: 40px; }
+  @media screen and (max-width: 1000px) {
+    .desc-wrapper {
+      padding: 0px;
+      padding-top: 20px;
+      flex-flow: column; } }
+
+.gray-line {
+  width: 100%;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  flex-basis: auto;
+  flex-grow: 0; }
+  @media screen and (max-width: 1000px) {
+    .gray-line {
+      display: block; } }
 
 .firm {
   padding: 40px;
   text-align: center;
   font-size: 24px;
   line-height: 160%; }
+  @media screen and (max-width: 1000px) {
+    .firm {
+      padding: 0px;
+      font-size: 15px; } }
 
 .links {
   text-align: center;
@@ -127,6 +176,9 @@ body {
   flex-flow: column;
   text-align: center;
   padding: 30px; }
+  @media screen and (max-width: 1000px) {
+    .trusted {
+      padding: 5px; } }
   .trusted h1 {
     padding-bottom: 20px; }
   .trusted .grid {
@@ -137,6 +189,10 @@ body {
       width: 350px;
       height: auto;
       padding: 20px; }
+      @media screen and (max-width: 1000px) {
+        .trusted .grid .element {
+          width: 30vw;
+          max-width: 50vw; } }
 
 .footer {
   background-color: black;
@@ -145,6 +201,12 @@ body {
   flex-flow: column;
   align-items: center;
   padding: 50px; }
+  @media screen and (max-width: 1000px) {
+    .footer {
+      flex-flow: column;
+      height: auto;
+      margin-bottom: 0px;
+      padding: 0px; } }
   .footer .nav {
     padding: 30px;
     display: flex;
@@ -161,11 +223,22 @@ body {
       transition: color 0.3s; }
       .footer .nav .element:hover {
         color: white; }
+    @media screen and (max-width: 1000px) {
+      .footer .nav {
+        flex-flow: column;
+        height: auto;
+        margin-bottom: 0px;
+        display: none; } }
   .footer .line {
     width: 1200px;
     height: 1px;
     background-color: #c8c8c8;
     content: ""; }
+    @media screen and (max-width: 1000px) {
+      .footer .line {
+        flex-flow: column;
+        height: auto;
+        margin-bottom: 0px; } }
   .footer .bottom-footer {
     padding: 60px;
     max-width: 1200px;
@@ -176,6 +249,10 @@ body {
     align-items: center;
     justify-content: space-around;
     color: white; }
+    @media screen and (max-width: 1000px) {
+      .footer .bottom-footer {
+        width: 98%;
+        padding: 10px; } }
     .footer .bottom-footer .left {
       text-align: left; }
     .footer .bottom-footer .right {
@@ -187,6 +264,10 @@ body {
   flex-wrap: nowrap;
   align-items: stretch;
   padding: 30px; }
+  @media screen and (max-width: 1000px) {
+    .divided {
+      flex-flow: column;
+      padding: 0px; } }
   .divided .part {
     flex-grow: 1;
     flex-basis: 0;
@@ -198,6 +279,9 @@ body {
       padding: 30px;
       flex-grow: 1;
       line-height: normal; }
+      @media screen and (max-width: 1000px) {
+        .divided .part p {
+          font-size: 15px; } }
     .divided .part a {
       color: gray; }
     .divided .part .p {
@@ -240,6 +324,9 @@ body {
   text-align: center;
   font-size: 24px;
   min-height: 40vh; }
+  @media screen and (max-width: 1000px) {
+    .bc-desc {
+      font-size: 18px; } }
 
 .coach {
   flex-flow: column; }
@@ -331,14 +418,26 @@ body {
       flex-basis: auto;
       display: flex;
       flex-flow: row; }
+      @media screen and (max-width: 1000px) {
+        .bg-bc-wrapper .bc-wrapper .element-wrapper {
+          flex-flow: column; } }
       .bg-bc-wrapper .bc-wrapper .element-wrapper:nth-child(even) {
         flex-flow: row-reverse; }
+        @media screen and (max-width: 1000px) {
+          .bg-bc-wrapper .bc-wrapper .element-wrapper:nth-child(even) {
+            flex-flow: column; } }
       .bg-bc-wrapper .bc-wrapper .element-wrapper .img {
         flex-grow: 1;
         display: block;
-        flex-basis: 0;
+        flex-basis: auto;
         max-height: 300px;
         margin: 50px; }
+        @media screen and (max-width: 1000px) {
+          .bg-bc-wrapper .bc-wrapper .element-wrapper .img {
+            margin: 0px;
+            width: 100vw;
+            height: 50vh;
+            min-height: none; } }
       .bg-bc-wrapper .bc-wrapper .element-wrapper .img-ele-1 {
         background-image: url(../img/bg2.png); }
       .bg-bc-wrapper .bc-wrapper .element-wrapper p {
@@ -348,6 +447,10 @@ body {
         flex-grow: 1;
         flex-basis: 0;
         display: Block; }
+        @media screen and (max-width: 1000px) {
+          .bg-bc-wrapper .bc-wrapper .element-wrapper p {
+            font-size: 15px;
+            text-align: center; } }
 
 .opw {
   max-width: 1600px; }
