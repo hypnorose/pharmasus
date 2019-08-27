@@ -132,7 +132,7 @@ body {
 
 .desc-wrapper {
   margin: auto;
-  min-height: 30vh;
+  min-height: 90vh;
   padding: 40px; }
   @media screen and (max-width: 1000px) {
     .desc-wrapper {
