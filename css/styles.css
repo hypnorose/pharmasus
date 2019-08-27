@@ -141,13 +141,17 @@ body {
       flex-flow: column; } }
 
 .gray-line {
-  width: 100%;
-  height: 1.5px;
   background-color: rgba(0, 0, 0, 0.6);
   flex-basis: auto;
-  flex-grow: 0; }
+  flex-grow: 0;
+  width: 1.5px;
+  align-self: stretch;
+  min-height: 2px; }
   @media screen and (max-width: 1000px) {
     .gray-line {
+      width: 100%;
+      height: 1.5px;
+      align-self: center;
       display: block; } }
 
 .firm {
@@ -490,11 +494,8 @@ form {
       background-color: black;
       color: white; }
 
-.quote-c {
-  font-family: 'Arial',sans-serif;
-  font-style: italic;
-  align-self: center; }
-  .quote-c .quote-author {
-    color: gray; }
+.quote-author {
+  color: gray;
+  font-size: 80%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -165,13 +165,18 @@ body{
             }
 }
 .gray-line{
-    width:100%;
-    height:1.5px;
+    
     background-color:rgba(0,0,0,0.6);
     flex-basis:auto;
     flex-grow:0;
+    //display:none ;
+    width:1.5px;
+    align-self: stretch;
+    min-height:2px;
      @media screen and (max-width: $break-small) {
-
+width:100%;
+    height:1.5px;
+         align-self:center;
                    display:block;
             }
 }
@@ -602,11 +607,8 @@ form{
         }
     }
 }
-.quote-c{ 
-    font-family:'Arial',sans-serif;
-    font-style:italic; 
-    align-self:center;
+
     .quote-author{
         color:gray;
+        font-size: 80%;
     }
-}
