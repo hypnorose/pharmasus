@@ -270,6 +270,7 @@ body {
   padding: 30px; }
   @media screen and (max-width: 1000px) {
     .divided {
+      display: block;
       flex-flow: column;
       padding: 0px; } }
   .divided .part {

@@ -318,7 +318,8 @@ width:100%;
     display:flex;
     flex-flow:row;
      @media screen and (max-width: $break-small) {
-            
+                
+             display:block;
                    flex-flow:column;
                  padding:0px;
             }
