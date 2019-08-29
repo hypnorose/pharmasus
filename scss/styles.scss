@@ -318,7 +318,7 @@ width:100%;
     display:flex;
     flex-flow:row;
      @media screen and (max-width: $break-small) {
-
+            
                    flex-flow:column;
                  padding:0px;
             }
@@ -331,11 +331,16 @@ width:100%;
         padding:20px;
         display:flex;
         flex-flow:column;
+        @media screen and (max-width: $break-small) {
+            
+                 display:block;
+            }
         p{
              font-size:20px;
              padding:30px;
             flex-grow:1;
             line-height:normal;
+            display:block;
                @media screen and (max-width: $break-small) {
 
                    font-size:15px;
@@ -345,7 +350,7 @@ width:100%;
             color:gray;
         }
         .p{
-            display:block;
+            
             line-height:30px;
             font-size:18px;
         }

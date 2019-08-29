@@ -278,18 +278,21 @@ body {
     padding: 20px;
     display: flex;
     flex-flow: column; }
+    @media screen and (max-width: 1000px) {
+      .divided .part {
+        display: block; } }
     .divided .part p {
       font-size: 20px;
       padding: 30px;
       flex-grow: 1;
-      line-height: normal; }
+      line-height: normal;
+      display: block; }
       @media screen and (max-width: 1000px) {
         .divided .part p {
           font-size: 15px; } }
     .divided .part a {
       color: gray; }
     .divided .part .p {
-      display: block;
       line-height: 30px;
       font-size: 18px; }
   .divided .line {
