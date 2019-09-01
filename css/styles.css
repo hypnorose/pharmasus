@@ -192,9 +192,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; }
     .trusted .grid .element {
-      width: 150px;
+      flex-shrink: 0;
+      flex-basis: 400px;
+      white-space: pre-wrap;
       height: auto;
-      padding: 20px; }
+      padding: 20px;
+      text-align: left; }
+      .trusted .grid .element b::before {
+        content: "\a"; }
       @media screen and (max-width: 1000px) {
         .trusted .grid .element {
           width: 30vw;
@@ -309,6 +314,17 @@ body {
   width: 100%;
   background-size: cover;
   background-position: center; }
+
+.img-nego {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/negocjacje/img.jpg");
+  background-size: auto;
+  background-position: center;
+  min-height: 80vh; }
+  @media screen and (max-width: 1000px) {
+    .img-nego {
+      background-position: right;
+      background-size: cover; } }
 
 .img1 {
   background-image: url("../img/bc/1.jpg"); }
